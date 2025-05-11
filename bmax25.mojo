@@ -55,3 +55,16 @@ def main():
 
     # Expected: doc0 = 1.2 + 2.5 = 3.7, doc1 = 0.7 + 3.1 = 3.8
     print(scores.__repr__())  # → [3.7, 3.8]
+    
+    # valid test from bm25s
+    var query_tokens_ids2 = List[Int]( 9, 18,  3, 12)
+    var data2 = List[Float32](0.48158914, 0.48158914, 0.44182488, 0.5292188,  0.48158914, 0.44182488,
+ 0.48158914, 0.48158914, 0.48158914, 0.48158914, 0.44182488, 0.48158914,
+ 0.5292188,  0.48158914, 0.5292188,  0.44182488, 0.48158914, 0.44182488,
+ 0.5292188,  0.44182488)
+    var indptr2 = List[Int]( 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
+    var indices2 = List[Int](2, 3, 1, 0, 3, 1, 2, 3, 2, 3, 1, 2, 0, 2, 0, 1, 3, 1, 0, 1)
+    var num_docs2 = 4
+    var scores2 = compute_relevance_from_scores(data2, indptr2, indices2, num_docs2, query_tokens_ids2)
+    print(scores2.__repr__()) 
+    #scores_single [1.5876564  0.         0.         0.48158914]
