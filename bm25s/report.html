@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.r1 {font-style: italic}
+.r2 {font-weight: bold}
+.r3 {color: #000080; text-decoration-color: #000080; font-weight: bold}
+.r4 {color: #7f7f7f; text-decoration-color: #7f7f7f; font-weight: bold}
+.r5 {color: #000080; text-decoration-color: #000080; font-weight: bold; font-style: italic}
+.r6 {color: #7f7f7f; text-decoration-color: #7f7f7f}
+.r7 {color: #000080; text-decoration-color: #000080}
+.r8 {color: #000000; text-decoration-color: #000000; background-color: #f8f8f8}
+.r9 {color: #666666; text-decoration-color: #666666; background-color: #f8f8f8}
+.r10 {color: #008000; text-decoration-color: #008000; background-color: #f8f8f8; font-weight: bold}
+.r11 {background-color: #f8f8f8}
+.r12 {color: #800000; text-decoration-color: #800000; font-weight: bold}
+.r13 {color: #008000; text-decoration-color: #008000; background-color: #f8f8f8}
+.r14 {font-weight: bold; font-style: italic}
+.r15 {color: #0000ff; text-decoration-color: #0000ff; background-color: #f8f8f8}
+.r16 {color: #bbbbbb; text-decoration-color: #bbbbbb; background-color: #f8f8f8}
+.r17 {color: #0000ff; text-decoration-color: #0000ff; background-color: #f8f8f8; font-weight: bold}
+.r18 {color: #000080; text-decoration-color: #000080; text-decoration: underline}
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+</style>
+</head>
+<body>
+    <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit"><span class="r1">                           /usr/lib/python3.10/threading.py: % of time =  72.31% (5.877s) out of 8.128s.                           </span>
+        ╷        ╷       ╷       ╷                                                                                                 
+ <span class="r2">       </span>│<span class="r3">Time</span><span class="r2">    </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r2">                                                                                                </span> 
+ <span class="r2"> </span><span class="r4">Line</span><span class="r2">  </span>│<span class="r5">Python</span><span class="r2">  </span>│<span class="r5">native</span><span class="r2"> </span>│<span class="r5">system</span><span class="r2"> </span>│<span class="r2">/usr/lib/python3.10/threading.py                                                                </span> 
+╺━━━━━━━┿━━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">   324 </span>│<span class="r7">        </span>│<span class="r7">   17% </span>│<span class="r7">       </span>│<span class="r8">                    gotit </span><span class="r9">=</span><span class="r8"> waiter</span><span class="r9">.</span><span class="r8">acquire(</span><span class="r10">True</span><span class="r8">, timeout)</span><span class="r11">                                      </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">   953 </span>│<span class="r7">        </span>│<span class="r12">   54%</span><span class="r7"> </span>│<span class="r7">   2%  </span>│<span class="r8">                </span><span class="r13">self</span><span class="r9">.</span><span class="r8">_target(</span><span class="r9">*</span><span class="r13">self</span><span class="r9">.</span><span class="r8">_args, </span><span class="r9">**</span><span class="r13">self</span><span class="r9">.</span><span class="r8">_kwargs)</span><span class="r11">                                      </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">       </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+╶───────┼────────┼───────┼───────┼────────────────────────────────────────────────────────────────────────────────────────────────╴
+ <span class="r6">       </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│<span class="r14">function summary for /usr/lib/python3.10/threading.py                                          </span>  
+ <span class="r6">   288 </span>│<span class="r7">        </span>│<span class="r7">   17% </span>│<span class="r7">       </span>│<span class="r8">Condition</span><span class="r9">.</span><span class="r8">wait</span><span class="r11">                                                                                 </span>  
+ <span class="r6">   942 </span>│<span class="r7">        </span>│<span class="r12">   54%</span><span class="r7"> </span>│<span class="r7">   2%  </span>│<span class="r8">Thread</span><span class="r9">.</span><span class="r8">run</span><span class="r11">                                                                                     </span>  
+        ╵        ╵       ╵       ╵                                                                                                 
+<span class="r1">    /home/team-054/.local/lib/python3.10/site-packages/llvmlite/binding/ffi.py: % of time =   4.22% (343.175ms) out of 8.128s.     </span>
+        ╷        ╷       ╷       ╷                                                                                                 
+ <span class="r2">       </span>│<span class="r3">Time</span><span class="r2">    </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r2">                                                                                                </span> 
+ <span class="r2"> </span><span class="r4">Line</span><span class="r2">  </span>│<span class="r5">Python</span><span class="r2">  </span>│<span class="r5">native</span><span class="r2"> </span>│<span class="r5">system</span><span class="r2"> </span>│<span class="r2">/home/team-054/.local/lib/python3.10/site-packages/llvmlite/binding/ffi.py                      </span> 
+╺━━━━━━━┿━━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">   197 </span>│<span class="r7">    1%  </span>│<span class="r7">    3% </span>│<span class="r7">       </span>│<span class="r8">            </span><span class="r10">return</span><span class="r8"> </span><span class="r13">self</span><span class="r9">.</span><span class="r8">_cfn(</span><span class="r9">*</span><span class="r8">args, </span><span class="r9">**</span><span class="r8">kwargs)</span><span class="r11">                                                  </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">       </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+╶───────┼────────┼───────┼───────┼────────────────────────────────────────────────────────────────────────────────────────────────╴
+ <span class="r6">       </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│<span class="r14">function summary for /home/team-054/.local/lib/python3.10/site-packages/llvmlite/binding/ffi.py</span>  
+ <span class="r6">   195 </span>│<span class="r7">    1%  </span>│<span class="r7">    3% </span>│<span class="r7">       </span>│<span class="r8">_lib_fn_wrapper</span><span class="r9">.</span><span class="r15">__call__</span><span class="r11">                                                                       </span>  
+        ╵        ╵       ╵       ╵                                                                                                 
+<span class="r1">  /home/team-054/.local/lib/python3.10/site-packages/llvmlite/binding/executionengine.py: % of time =   2.94% (238.625ms) out of   </span>
+<span class="r1">                                                              8.128s.                                                              </span>
+        ╷        ╷       ╷       ╷                                                                                                 
+ <span class="r2">       </span>│<span class="r3">Time</span><span class="r2">    </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r2">                                                                                                </span> 
+ <span class="r2"> </span><span class="r4">Line</span><span class="r2">  </span>│<span class="r5">Python</span><span class="r2">  </span>│<span class="r5">native</span><span class="r2"> </span>│<span class="r5">system</span><span class="r2"> </span>│<span class="r2">/home/team-054/.local/lib/python3.10/site-packages/llvmlite/binding/executionengine.py          </span> 
+╺━━━━━━━┿━━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">   178 </span>│<span class="r7">        </span>│<span class="r7">    3% </span>│<span class="r7">       </span>│<span class="r8">    </span><span class="r10">def</span><span class="r16"> </span><span class="r15">_raw_object_cache_notify</span><span class="r8">(</span><span class="r13">self</span><span class="r8">, data):</span><span class="r11">                                                  </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">       </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+╶───────┼────────┼───────┼───────┼────────────────────────────────────────────────────────────────────────────────────────────────╴
+ <span class="r6">       </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│<span class="r14">function summary for /home/team-054/.local/lib/python3.10/site-packages/llvmlite/binding/execu…</span>  
+ <span class="r6">   178 </span>│<span class="r7">        </span>│<span class="r7">    3% </span>│<span class="r7">       </span>│<span class="r8">ExecutionEngine</span><span class="r9">.</span><span class="r8">_raw_object_cache_notify</span><span class="r11">                                                       </span>  
+        ╵        ╵       ╵       ╵                                                                                                 
+<span class="r1">     /usr/local/lib/python3.10/dist-packages/numpy-2.2.5-py3.10-linux-x86_64.egg/numpy/_core/__init__.py: % of time =   2.34%      </span>
+<span class="r1">                                                    (190.101ms) out of 8.128s.                                                     </span>
+        ╷        ╷       ╷       ╷                                                                                                 
+ <span class="r2">       </span>│<span class="r3">Time</span><span class="r2">    </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r2">                                                                                                </span> 
+ <span class="r2"> </span><span class="r4">Line</span><span class="r2">  </span>│<span class="r5">Python</span><span class="r2">  </span>│<span class="r5">native</span><span class="r2"> </span>│<span class="r5">system</span><span class="r2"> </span>│<span class="r2">/usr/local/lib/python3.10/dist-packages/numpy-2.2.5-py3.10-linux-x86_64.egg/numpy/_core/__init… </span> 
+╺━━━━━━━┿━━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">    74 </span>│<span class="r7">        </span>│<span class="r7">    1% </span>│<span class="r7">       </span>│<span class="r10">from</span><span class="r16"> </span><span class="r17">.</span><span class="r16"> </span><span class="r10">import</span><span class="r8"> numeric</span><span class="r11">                                                                          </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">    96 </span>│<span class="r7">        </span>│<span class="r7">    1% </span>│<span class="r7">       </span>│<span class="r10">from</span><span class="r16"> </span><span class="r17">.</span><span class="r16"> </span><span class="r10">import</span><span class="r8"> _add_newdocs</span><span class="r11">                                                                     </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+        ╵        ╵       ╵       ╵                                                                                                 
+<span class="r1"> /usr/local/lib/python3.10/dist-packages/scipy-1.15.3-py3.10-linux-x86_64.egg/scipy/sparse/linalg/__init__.py: % of time =   2.05% </span>
+<span class="r1">                                                    (166.397ms) out of 8.128s.                                                     </span>
+        ╷        ╷       ╷       ╷                                                                                                 
+ <span class="r2">       </span>│<span class="r3">Time</span><span class="r2">    </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r2">                                                                                                </span> 
+ <span class="r2"> </span><span class="r4">Line</span><span class="r2">  </span>│<span class="r5">Python</span><span class="r2">  </span>│<span class="r5">native</span><span class="r2"> </span>│<span class="r5">system</span><span class="r2"> </span>│<span class="r2">/usr/local/lib/python3.10/dist-packages/scipy-1.15.3-py3.10-linux-x86_64.egg/scipy/sparse/lina… </span> 
+╺━━━━━━━┿━━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">   142 </span>│<span class="r7">        </span>│<span class="r7">    2% </span>│<span class="r7">       </span>│<span class="r10">from</span><span class="r16"> </span><span class="r17">.</span><span class="r16"> </span><span class="r10">import</span><span class="r8"> isolve, dsolve, interface, eigen, matfuncs</span><span class="r11">                                       </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+        ╵        ╵       ╵       ╵                                                                                                 
+<span class="r1">/usr/local/lib/python3.10/dist-packages/numpy-2.2.5-py3.10-linux-x86_64.egg/numpy/lib/npyio.py: % of time =   1.17% (95.226ms) out </span>
+<span class="r1">                                                            of 8.128s.                                                             </span>
+        ╷        ╷       ╷       ╷                                                                                                 
+ <span class="r2">       </span>│<span class="r3">Time</span><span class="r2">    </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r2">                                                                                                </span> 
+ <span class="r2"> </span><span class="r4">Line</span><span class="r2">  </span>│<span class="r5">Python</span><span class="r2">  </span>│<span class="r5">native</span><span class="r2"> </span>│<span class="r5">system</span><span class="r2"> </span>│<span class="r2">/usr/local/lib/python3.10/dist-packages/numpy-2.2.5-py3.10-linux-x86_64.egg/numpy/lib/npyio.py  </span> 
+╺━━━━━━━┿━━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+ <span class="r6">     1 </span>│<span class="r7">        </span>│<span class="r7">    1% </span>│<span class="r7">       </span>│<span class="r10">from</span><span class="r16"> </span><span class="r17">._npyio_impl</span><span class="r16"> </span><span class="r10">import</span><span class="r8"> (</span><span class="r11">                                                                     </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+        ╵        ╵       ╵       ╵                                                                                                 
+<span class="r1">/usr/local/lib/python3.10/dist-packages/numpy-2.2.5-py3.10-linux-x86_64.egg/numpy/_core/numeric.py: % of time =   1.17% (95.201ms) </span>
+<span class="r1">                                                          out of 8.128s.                                                           </span>
+        ╷        ╷       ╷       ╷                                                                                                 
+ <span class="r2">       </span>│<span class="r3">Time</span><span class="r2">    </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r2">                                                                                                </span> 
+ <span class="r2"> </span><span class="r4">Line</span><span class="r2">  </span>│<span class="r5">Python</span><span class="r2">  </span>│<span class="r5">native</span><span class="r2"> </span>│<span class="r5">system</span><span class="r2"> </span>│<span class="r2">/usr/local/lib/python3.10/dist-packages/numpy-2.2.5-py3.10-linux-x86_64.egg/numpy/_core/numeri… </span> 
+╺━━━━━━━┿━━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">  2702 </span>│<span class="r7">        </span>│<span class="r7">    1% </span>│<span class="r7">       </span>│<span class="r10">from</span><span class="r16"> </span><span class="r17">.</span><span class="r16"> </span><span class="r10">import</span><span class="r8"> arrayprint</span><span class="r11">                                                                       </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+        ╵        ╵       ╵       ╵                                                                                                 
+<span class="r1"> /usr/local/lib/python3.10/dist-packages/numpy-2.2.5-py3.10-linux-x86_64.egg/numpy/lib/__init__.py: % of time =   1.17% (95.024ms) </span>
+<span class="r1">                                                          out of 8.128s.                                                           </span>
+        ╷        ╷       ╷       ╷                                                                                                 
+ <span class="r2">       </span>│<span class="r3">Time</span><span class="r2">    </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r2">                                                                                                </span> 
+ <span class="r2"> </span><span class="r4">Line</span><span class="r2">  </span>│<span class="r5">Python</span><span class="r2">  </span>│<span class="r5">native</span><span class="r2"> </span>│<span class="r5">system</span><span class="r2"> </span>│<span class="r2">/usr/local/lib/python3.10/dist-packages/numpy-2.2.5-py3.10-linux-x86_64.egg/numpy/lib/__init__… </span> 
+╺━━━━━━━┿━━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">    33 </span>│<span class="r7">        </span>│<span class="r7">    1% </span>│<span class="r7">       </span>│<span class="r10">from</span><span class="r16"> </span><span class="r17">.</span><span class="r16"> </span><span class="r10">import</span><span class="r8"> _polynomial_impl</span><span class="r11">                                                                 </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+        ╵        ╵       ╵       ╵                                                                                                 
+<span class="r1">/usr/local/lib/python3.10/dist-packages/numpy-2.2.5-py3.10-linux-x86_64.egg/numpy/linalg/_linalg.py: % of time =   1.17% (94.966ms)</span>
+<span class="r1">                                                          out of 8.128s.                                                           </span>
+        ╷        ╷       ╷       ╷                                                                                                 
+ <span class="r2">       </span>│<span class="r3">Time</span><span class="r2">    </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r2">                                                                                                </span> 
+ <span class="r2"> </span><span class="r4">Line</span><span class="r2">  </span>│<span class="r5">Python</span><span class="r2">  </span>│<span class="r5">native</span><span class="r2"> </span>│<span class="r5">system</span><span class="r2"> </span>│<span class="r2">/usr/local/lib/python3.10/dist-packages/numpy-2.2.5-py3.10-linux-x86_64.egg/numpy/linalg/_lina… </span> 
+╺━━━━━━━┿━━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">    37 </span>│<span class="r7">        </span>│<span class="r7">    1% </span>│<span class="r7">       </span>│<span class="r10">from</span><span class="r16"> </span><span class="r17">numpy.lib._twodim_base_impl</span><span class="r16"> </span><span class="r10">import</span><span class="r8"> triu, eye</span><span class="r11">                                              </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+        ╵        ╵       ╵       ╵                                                                                                 
+<span class="r1">   /usr/local/lib/python3.10/dist-packages/numpy-2.2.5-py3.10-linux-x86_64.egg/numpy/matrixlib/defmatrix.py: % of time =   1.17%   </span>
+<span class="r1">                                                     (94.927ms) out of 8.128s.                                                     </span>
+        ╷        ╷       ╷       ╷                                                                                                 
+ <span class="r2">       </span>│<span class="r3">Time</span><span class="r2">    </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r2">                                                                                                </span> 
+ <span class="r2"> </span><span class="r4">Line</span><span class="r2">  </span>│<span class="r5">Python</span><span class="r2">  </span>│<span class="r5">native</span><span class="r2"> </span>│<span class="r5">system</span><span class="r2"> </span>│<span class="r2">/usr/local/lib/python3.10/dist-packages/numpy-2.2.5-py3.10-linux-x86_64.egg/numpy/matrixlib/de… </span> 
+╺━━━━━━━┿━━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">    73 </span>│<span class="r7">        </span>│<span class="r7">    1% </span>│<span class="r7">       </span>│<span class="r10">class</span><span class="r16"> </span><span class="r17">matrix</span><span class="r8">(N</span><span class="r9">.</span><span class="r8">ndarray):</span><span class="r11">                                                                       </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+        ╵        ╵       ╵       ╵                                                                                                 
+generated by the <a class="r18" href="https://github.com/plasma-umass/scalene">scalene</a> profiler                                                                                                   
+</code></pre>
+</body>
+</html>
