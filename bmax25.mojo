@@ -1,5 +1,7 @@
 from collections import List
 from operations.selection import heap_push, _sift_down, _sift_up
+from operations.scoring import compute_relevance_from_scores
+
 
 def main():
 
@@ -41,3 +43,15 @@ def main():
     print("\nafter _sift_up:")
     print("  values :", h_vals.__repr__())
     print("  indices:", h_idx.__repr__())
+
+    
+    # Example miniature CSR index with two docs and three tokens
+    var data     = List[Float32](1.2, 0.7, 2.5, 3.1)
+    var indices1  = List[Int]    (0,   1,   0,   1)      # doc ids
+    var indptr   = List[Int]    (0,   2,   3,   4)      # row ptr (3 tokens → 4 entries)
+    var q_tokens = List[Int]    (0, 2)                  # query contains token 0 and 2
+
+    var scores = compute_relevance_from_scores(data, indptr, indices1, 2, q_tokens) # 2 is num of docs
+
+    # Expected: doc0 = 1.2 + 2.5 = 3.7, doc1 = 0.7 + 3.1 = 3.8
+    print(scores.__repr__())  # → [3.7, 3.8]
