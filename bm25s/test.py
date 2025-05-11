@@ -33,12 +33,16 @@ print(query_tokens)
 start = time.time()
 results, scores = retriever.retrieve(query_tokens, k=2)
 end = time.time()
-print("Elapsed (after compilation) = %s" % (end - start))
+print("")
+print("Elapsed (with compilation) = %s" % (end - start))
+print("")
 
 start = time.time()
 results, scores = retriever.retrieve(query_tokens, k=2)
 end = time.time()
+print("")
 print("Elapsed (after compilation) = %s" % (end - start))
+print("")
 
 
 for i in range(results.shape[1]):
