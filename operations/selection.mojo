@@ -24,6 +24,27 @@ def _sift_down(
     indices[p] = new_idx
 
 
+def _sift_up(mut values: List[Float32], 
+            mut indices: List[Int], 
+            pos: Int, 
+            length: Int):
+    var startpos = pos
+    var new_value = values[pos]
+    var new_index = indices[pos]
+    var childpos = 2 * pos + 1
+    while childpos < length:
+        var rightpos = childpos + 1
+        if rightpos < length and values[rightpos] < values[childpos]:
+            childpos = rightpos
+        values[pos] = values[childpos]
+        indices[pos] = indices[childpos]
+        pos = childpos
+        childpos = 2 * pos + 1
+    values[pos] = new_value
+    indices[pos] = new_index
+    _sift_down(values, indices, startpos, pos)
+
+
 def heap_push(mut values: List[Float32], 
               mut indices: List[Int], 
               value: Float32, 
