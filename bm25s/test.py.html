@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.r1 {font-style: italic}
+.r2 {font-weight: bold}
+.r3 {color: #000080; text-decoration-color: #000080; font-weight: bold}
+.r4 {color: #7f7f7f; text-decoration-color: #7f7f7f; font-weight: bold}
+.r5 {color: #000080; text-decoration-color: #000080; font-weight: bold; font-style: italic}
+.r6 {color: #7f7f7f; text-decoration-color: #7f7f7f}
+.r7 {color: #000080; text-decoration-color: #000080}
+.r8 {color: #800000; text-decoration-color: #800000; font-weight: bold}
+.r9 {color: #000000; text-decoration-color: #000000; background-color: #f8f8f8}
+.r10 {color: #666666; text-decoration-color: #666666; background-color: #f8f8f8}
+.r11 {background-color: #f8f8f8}
+.r12 {font-weight: bold; font-style: italic}
+.r13 {color: #008000; text-decoration-color: #008000; background-color: #f8f8f8; font-weight: bold}
+.r14 {color: #bbbbbb; text-decoration-color: #bbbbbb; background-color: #f8f8f8}
+.r15 {color: #0000ff; text-decoration-color: #0000ff; background-color: #f8f8f8; font-weight: bold}
+.r16 {color: #000080; text-decoration-color: #000080; text-decoration: underline}
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+</style>
+</head>
+<body>
+    <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit"><span class="r1">             /home/team-054/dkozlov/bm25s/bm25s/numba/retrieve_utils.py: % of time =  65.26% (18.909s) out of 28.975s.             </span>
+        ╷        ╷       ╷       ╷                                                                                                 
+ <span class="r2">       </span>│<span class="r3">Time</span><span class="r2">    </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r2">                                                                                                </span> 
+ <span class="r2"> </span><span class="r4">Line</span><span class="r2">  </span>│<span class="r5">Python</span><span class="r2">  </span>│<span class="r5">native</span><span class="r2"> </span>│<span class="r5">system</span><span class="r2"> </span>│<span class="r2">/home/team-054/dkozlov/bm25s/bm25s/numba/retrieve_utils.py                                      </span> 
+╺━━━━━━━┿━━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">   127 </span>│<span class="r8">    7%</span><span class="r7">  </span>│<span class="r8">   55%</span><span class="r7"> </span>│<span class="r7">   4%  </span>│<span class="r9">    retrieved_scores, retrieved_indices </span><span class="r10">=</span><span class="r9"> _retrieve_internal_jitted_parallel(</span><span class="r11">                  </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">       </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+╶───────┼────────┼───────┼───────┼────────────────────────────────────────────────────────────────────────────────────────────────╴
+ <span class="r6">       </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│<span class="r12">function summary for /home/team-054/dkozlov/bm25s/bm25s/numba/retrieve_utils.py                </span>  
+ <span class="r6">    74 </span>│<span class="r8">    7%</span><span class="r7">  </span>│<span class="r8">   55%</span><span class="r7"> </span>│<span class="r7">   4%  </span>│<span class="r9">BM25</span><span class="r10">.</span><span class="r9">_retrieve_numba_functional</span><span class="r11">                                                                </span>  
+        ╵        ╵       ╵       ╵                                                                                                 
+<span class="r1">                   /home/team-054/dkozlov/bm25s/bm25s/__init__.py: % of time =  33.81% (9.797s) out of 28.975s.                    </span>
+        ╷        ╷       ╷       ╷                                                                                                 
+ <span class="r2">       </span>│<span class="r3">Time</span><span class="r2">    </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r3">––––––</span><span class="r2"> </span>│<span class="r2">                                                                                                </span> 
+ <span class="r2"> </span><span class="r4">Line</span><span class="r2">  </span>│<span class="r5">Python</span><span class="r2">  </span>│<span class="r5">native</span><span class="r2"> </span>│<span class="r5">system</span><span class="r2"> </span>│<span class="r2">/home/team-054/dkozlov/bm25s/bm25s/__init__.py                                                  </span> 
+╺━━━━━━━┿━━━━━━━━┿━━━━━━━┿━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">    11 </span>│<span class="r7">        </span>│<span class="r7">   14% </span>│<span class="r7">   2%  </span>│<span class="r13">import</span><span class="r14"> </span><span class="r15">numpy</span><span class="r14"> </span><span class="r13">as</span><span class="r14"> </span><span class="r15">np</span><span class="r11">                                                                             </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">   303 </span>│<span class="r7">        </span>│<span class="r7">   16% </span>│<span class="r7">       </span>│<span class="r9">        </span><span class="r13">import</span><span class="r14"> </span><span class="r15">scipy.sparse</span><span class="r14"> </span><span class="r13">as</span><span class="r14"> </span><span class="r15">sp</span><span class="r11">                                                              </span>  
+ <span class="r6">   ... </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+ <span class="r6">       </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│                                                                                                 
+╶───────┼────────┼───────┼───────┼────────────────────────────────────────────────────────────────────────────────────────────────╴
+ <span class="r6">       </span>│<span class="r7">        </span>│<span class="r7">       </span>│<span class="r7">       </span>│<span class="r12">function summary for /home/team-054/dkozlov/bm25s/bm25s/__init__.py                            </span>  
+ <span class="r6">   280 </span>│<span class="r7">        </span>│<span class="r7">   16% </span>│<span class="r7">       </span>│<span class="r9">BM25</span><span class="r10">.</span><span class="r9">build_index_from_ids</span><span class="r11">                                                                      </span>  
+        ╵        ╵       ╵       ╵                                                                                                 
+generated by the <a class="r16" href="https://github.com/plasma-umass/scalene">scalene</a> profiler                                                                                                   
+</code></pre>
+</body>
+</html>
